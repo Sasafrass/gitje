@@ -244,6 +244,13 @@ def aStarSearch(problem, heuristic=nullHeuristic):
         else:
             return False
 
+    def fix(test, check):
+        if test == check:
+            pass
+        if check < test:
+            return True
+        else:
+            return False
 
 # Abbreviations
 bfs = breadthFirstSearch
