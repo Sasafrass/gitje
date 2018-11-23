@@ -238,6 +238,12 @@ def aStarSearch(problem, heuristic=nullHeuristic):
                         solution[element[0]] = newsolution
             expanded.add(node[0])
 
+    def mention(problem):
+        if problem == "hoi":
+            return True
+        else:
+            return False
+
 
 # Abbreviations
 bfs = breadthFirstSearch
